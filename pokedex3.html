@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  
+<script src="jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<!--<script src="sliders.js"></script>-->
+<br><br>
+
+<div id="graph" class="col-sm-11"></div>
+<div id="right" class="col-sm-1">
+  <div id="filter">
+    <b>Species Filter:</b><br>
+    <div class="col-sm-6">
+    <input type="checkbox" class="checkbox1" name="v" value="Uncheck" checked> Check all</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Fairy" checked> Fairy</input><br>
+    <input type="checkbox" class="checkbox1" name='v' value="Normal" checked> Normal</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Fighting" checked> Fighting</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Flying" checked> Flying</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Poison" checked> Poison</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Ground" checked> Ground</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Rock" checked> Rock</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Bug" checked> Bug</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Ghost" checked> Ghost</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Steel" checked> Steel</input><br>
+    </div>
+    <div class="col-sm-6">
+    <br>
+    <input type="checkbox" class="checkbox1" name="v" value="Fire" checked> Fire</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Water" checked> Water</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Grass" checked> Grass</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Electric" checked> Electric</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Psychic" checked> Psychic</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Ice" checked> Ice</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Dragon" checked> Dragon</input><br>
+    <input type="checkbox" class="checkbox1" name="v" value="Dark" checked> Dark</input><br>
+<br>
+<br>
+<br>
+    
+    </div>
+  </div>
+
+  <b>X axis:</b><br>
+  <select class="form-control" name="xAX" id="xAXs">
+        <option selected="selected"value ="hp">HP</option>
+        <option value ="attack">Attack</option>
+        <option value ="defense">Defense</option>
+        <option value = "special_attack">Special Attack</option>
+        <option value = "special_defense">Special Defense</option>
+        <option value ="speed">Speed</option>
+  </select><br>
+  <b>Y axis:</b><br>
+  <select class="form-control" name="yAX" id="yAXs">
+        <option value ="hp">HP</option>
+        <option selected="selected" value ="attack">Attack</option>
+        <option value ="defense">Defense</option>
+        <option value = "special_attack">Special Attack</option>
+        <option value = "special_defense">Special Defense</option>
+        <option value ="speed">Speed</option>
+  </select> 
+
+</div>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script src="pokedex.js"></script>
+</body>
